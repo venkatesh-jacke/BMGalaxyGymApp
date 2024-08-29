@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyApp.Splash" parent="Theme.SplashScreen">
+        <!-- Set your splash screen background -->
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <!-- Set your splash screen icon -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/bmgalaxylogo</item>
+        <!-- Optional: Set icon scale -->
+        <item name="windowSplashScreenIconBackgroundColor">@color/black</item>
+        <item name="postSplashScreenTheme">@style/Theme.BmGalaxy</item>
+
+
+    </style>
+    <style name="Theme.BmGalaxy" parent="android:Theme.Material.NoActionBar" />
+</resources>
