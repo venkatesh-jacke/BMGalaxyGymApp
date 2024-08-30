@@ -9,6 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
@@ -21,11 +22,12 @@ fun CircularImageView(
     modifier: Modifier = Modifier,
     imagePainter: Painter,
     contentDescription: String? = null,
-    size: Dp = 120.dp // Default size
+    size: Dp = 150.dp // Default size
 ) {
     Image(
         painter = imagePainter,
         contentDescription = contentDescription,
+        contentScale = ContentScale.Crop,
         modifier = modifier
             .size(size)
             .clip(CircleShape) // Clip the image to a circle

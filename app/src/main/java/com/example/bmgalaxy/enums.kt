@@ -5,3 +5,7 @@ enum class ButtonWidth {
     Half,
     Custom
 }
+enum class UserRole{
+    MEMBER,
+    ADMIN
+}
