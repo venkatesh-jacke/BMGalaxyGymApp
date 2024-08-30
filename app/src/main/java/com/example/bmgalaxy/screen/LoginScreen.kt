@@ -77,6 +77,7 @@ fun LoginScreen() {
             text = password,
             labelText = "Password",
             leadingIcon = Icons.Default.Lock,
+            isSecureField = true,
             onValueChange = { password = it }
         )
 

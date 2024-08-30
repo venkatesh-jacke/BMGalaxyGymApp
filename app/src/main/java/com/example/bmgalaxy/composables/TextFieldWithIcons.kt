@@ -21,7 +21,8 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.bmgalaxy.ButtonWidth
 import com.example.bmgalaxy.ui.theme.BmGalaxyTheme
-
+import androidx.compose.material.icons.filled.Visibility
+import androidx.compose.material.icons.filled.VisibilityOff
 
 @Composable
 fun TextFieldWithIcons(
@@ -50,9 +51,9 @@ fun TextFieldWithIcons(
         trailingIcon = {
             if (isSecureField) {
                 val icon = if (isPasswordVisible) {
-                    Icons.Filled.Lock
+                    Icons.Filled.Visibility
                 } else {
-                    Icons.Filled.Clear
+                    Icons.Filled.VisibilityOff
                 }
                 IconButton(onClick = {
                     isPasswordVisible = !isPasswordVisible
